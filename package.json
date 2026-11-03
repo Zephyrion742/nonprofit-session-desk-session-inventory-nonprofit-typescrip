@@ -1,0 +1,15 @@
+{
+  "name": "nonprofit-session-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/session_desk.ts",
+    "test": "node --experimental-strip-types --test test/session_policy.test.ts",
+    "typecheck": "tsc --noEmit",
+    "demo": "node --experimental-strip-types src/nonprofit_preview.ts"
+  },
+  "dependencies": { "zod": "^3.24.2" },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.8.2" },
+  "engines": { "node": ">=22.18" }
+}

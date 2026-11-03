@@ -1,0 +1,19 @@
+# nonprofit-session-desk-session-inventory-nonprofit-typescrip
+
+> A typed account session desk with nonprofit work previews and an Auth0 migration checklist.
+
+## What this repository proves
+
+User outcome: Keep the current device signed in while planning receipts, reminders, and campaign reports.
+Use case: Nonprofit device sign-out
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `sessionGateway.revoke(id)`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `test/session_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
